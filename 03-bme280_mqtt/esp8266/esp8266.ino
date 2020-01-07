@@ -12,18 +12,18 @@
 #include <ESP8266WiFi.h>
 #include <PubSubClient.h>
 
-#define MQTT_TOPIC_HUMIDITY "home/bme280/humidity"
-#define MQTT_TOPIC_TEMPERATURE "home/bme280/temperature"
-#define MQTT_TOPIC_STATE "home/bme280/status"
+#define MQTT_TOPIC_HUMIDITY "home/schlafzimmer/humidity"
+#define MQTT_TOPIC_TEMPERATURE "home/schlafzimmer/temperature"
+#define MQTT_TOPIC_STATE "home/schlafzimmer/status"
 #define MQTT_PUBLISH_DELAY 60000
-#define MQTT_CLIENT_ID "esp8266bme280"
+#define MQTT_CLIENT_ID "esp8266bme280_schlafzimmer"
 
 #define BME280_ADDRESS 0x76
 
-const char *WIFI_SSID = "your-ssid";
-const char *WIFI_PASSWORD = "your-password";
+const char *WIFI_SSID = "ResisFritzbox";
+const char *WIFI_PASSWORD = "01279711805609177903";
 
-const char *MQTT_SERVER = "homeserver";
+const char *MQTT_SERVER = "192.168.178.64";
 const char *MQTT_USER = "mqttuser"; // NULL for no authentication
 const char *MQTT_PASSWORD = "mqttpassword"; // NULL for no authentication
 

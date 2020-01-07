@@ -41,3 +41,11 @@ services:
       - mosquitto
       - influxdb
     restart: always
+
+  forecast:
+    build: ./06-forecast
+    image: forecast
+    container_name: forecast
+    depends_on:
+      - influxdb
+    restart: always
